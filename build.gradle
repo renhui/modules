@@ -1,4 +1,4 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 
 buildscript {
 
@@ -52,12 +52,8 @@ ext {
     versionCode = 500
     versionName = "5.0.0"
 
-    //上传至maven仓库的aladdin core版本
     mavenCoreVersionName = "1.0.2"
-    //上传至maven仓库的aladdin hybrid版本
     mavenHybridVersionName = "1.0.2"
-    //aladdin core是否上传至release仓库
     mavenCoreRelease = false
-    //aladdin hybrid是否上传至release仓库
     mavenHybridRelease = false
 }

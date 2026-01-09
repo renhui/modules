@@ -42,10 +42,7 @@ android {
 
 
 modulesConfig {
-//    excludeJars 'annotation_dev-1.0.1.jar', 'InfoMonitor.jar'
-//    includeClassPackage "com.test", "com.beyondxia"
     registerWithPlugin true
-//    businessMatchStrings "my", "export"
 }
 
 dependencies {
@@ -56,11 +53,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-   /* if (devMode.toBoolean()) {
-        annotationProcessor 'com.beyondxia.modules:compiler_dev:1.0.1'
-    } else {
-        annotationProcessor 'com.beyondxia.modules:compiler:1.1.1'
-    }*/
+
 
     annotationProcessor project(':modules-compiler')
     implementation project(':modules-annotation')
