@@ -1,7 +1,7 @@
 package com.beyondxia.message;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -11,7 +11,7 @@ import com.beyondxia.host.export.HostExportService;
 import com.beyondxia.modules.BCDictionary;
 
 
-public class B2Activity extends AppCompatActivity {
+public class B2Activity extends Activity {
     private Button bt_host_call;
     private Button bt_business1_call;
     private Button bt_business1_call2;

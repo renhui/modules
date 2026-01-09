@@ -11,15 +11,12 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:4.1.0'
         if (devMode.toBoolean()) {
             classpath 'com.beyondxia.modules:plugin_dev:1.0.4'
         } else {
             classpath 'com.beyondxia.modules:transform-plugin:1.3.5'
         }
-
-        // package
-        classpath 'com.novoda:bintray-release:+'
 
     }
 }

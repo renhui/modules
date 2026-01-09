@@ -17,11 +17,14 @@ dependencies {
     implementation 'org.apache.commons:commons-collections4:4.1'
 
 
-    if (devMode.toBoolean()) {
-        implementation 'com.beyondxia.modules:annotation_dev:1.0.1'
-    } else {
-        implementation 'com.beyondxia.modules:annotation:1.0.3'
-    }
+//    if (devMode.toBoolean()) {
+//        implementation 'com.beyondxia.modules:annotation_dev:1.0.1'
+//    } else {
+//        implementation 'com.beyondxia.modules:annotation:1.0.3'
+//    }
+
+    implementation project(':modules-annotation')
+
 }
 
 sourceCompatibility = "1.8"

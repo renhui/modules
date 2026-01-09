@@ -33,10 +33,12 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
     testImplementation 'junit:junit:4.12'
-    if (devMode.toBoolean()) {
-        annotationProcessor 'com.beyondxia.modules:compiler_dev:1.0.1'
-    } else {
-        annotationProcessor 'com.beyondxia.modules:compiler:1.1.1'
-    }
+//    if (devMode.toBoolean()) {
+//        annotationProcessor 'com.beyondxia.modules:compiler_dev:1.0.1'
+//    } else {
+//        annotationProcessor 'com.beyondxia.modules:compiler:1.1.1'
+//    }
+    annotationProcessor project(':modules-compiler')
     implementation project(':modules_services_api')
+
 }

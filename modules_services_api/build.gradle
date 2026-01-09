@@ -29,10 +29,10 @@ dependencies {
 
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
-    if (devMode.toBoolean()) {
-        api 'com.beyondxia.modules:api_dev:1.0.1'
-    } else {
-        api 'com.beyondxia.modules:api:1.0.4'
-    }
-//    api project(':modules-api')
+//    if (devMode.toBoolean()) {
+//        api 'com.beyondxia.modules:api_dev:1.0.1'
+//    } else {
+//        api 'com.beyondxia.modules:api:1.0.4'
+//    }
+    api project(':modules-api')
 }

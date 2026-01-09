@@ -39,11 +39,12 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.google.code.gson:gson:2.6.2'
 
-    if (devMode.toBoolean()) {
-        api 'com.beyondxia.modules:annotation_dev:1.0.1'
-    } else {
-        api 'com.beyondxia.modules:annotation:1.0.3'
-    }
+//    if (devMode.toBoolean()) {
+//        api 'com.beyondxia.modules:annotation_dev:1.0.1'
+//    } else {
+//        api 'com.beyondxia.modules:annotation:1.0.3'
+//    }
+    implementation project(':modules-annotation')
 }
 
 

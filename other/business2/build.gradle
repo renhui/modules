@@ -27,10 +27,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    if (devMode.toBoolean()) {
-        annotationProcessor 'com.beyondxia.modules:compiler_dev:1.0.1'
-    } else {
-        annotationProcessor 'com.beyondxia.modules:compiler:1.1.1'
-    }
+//    if (devMode.toBoolean()) {
+//        annotationProcessor 'com.beyondxia.modules:compiler_dev:1.0.1'
+//    } else {
+//        annotationProcessor 'com.beyondxia.modules:compiler:1.1.1'
+//    }
+    annotationProcessor project(':modules-compiler')
+    implementation project(':modules-annotation')
+
     implementation project(':modules_services_api')
 }
