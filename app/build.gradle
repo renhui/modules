@@ -60,9 +60,10 @@ dependencies {
 
 
     implementation project(':modules_services_api')
-//    runtimeOnly project(':business1')
+
+    runtimeOnly project(':business1')
     runtimeOnly project(':other:business2')
 
-    implementation(name: 'business1-debug', ext: 'aar')
+    //implementation(name: 'business1-debug', ext: 'aar')
 
 }
