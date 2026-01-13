@@ -42,7 +42,7 @@ android {
 
 
 modulesConfig {
-    registerWithPlugin true
+    registerWithPlugin false
 }
 
 dependencies {
